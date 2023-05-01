@@ -1,0 +1,368 @@
+@import url('reset.css');
+@import url('common.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular');
+
+body {
+   font-family: 'Poppins', sans-serif;
+   color: #f5f5f5;
+   font-size: 18px;
+   background-color: #252525;
+}
+
+.white {
+   background-color: #f5f5f5;
+}
+
+.green {
+   background-color: rgb(92, 123, 73);
+}
+
+[class*='__container'] {
+   max-width: 1310px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.block {
+   padding: 70px 0;
+}
+.block__container {
+}
+.block__title {
+   font-size: 36px;
+   line-height: 125%;
+}
+.block__title:not(:last-child) {
+   margin-bottom: 25px;
+}
+.block__body {
+}
+.block__body:not(:last-child) {
+   margin-bottom: 30px;
+}
+.block__box:not(:last-child) {
+   margin-bottom: 40px;
+}
+.block__subtitle {
+   font-size: 24px;
+   line-height: 125%;
+}
+.block__subtitle:not(:last-child) {
+   margin-bottom: 20px;
+}
+.block__list {
+}
+.block__item {
+}
+.block__item {
+   display: grid;
+   justify-items: start;
+   row-gap: 5px;
+}
+.block__item:not(:last-child) {
+   margin-bottom: 15px;
+}
+.block__link {
+   line-height: 120%;
+   transition: color 0.3s ease 0s;
+}
+.block__link:hover {
+   color: #ffff00;
+}
+.block__text {
+   line-height: 1.5;
+}
+.block__text:not(:last-child) {
+   margin-bottom: 10px;
+}
+.block__table:not(:last-child) {
+   margin-bottom: 1.25rem;
+}
+/* ======================================================================================================================================================== */
+.block__products {
+   display: grid;
+   gap: 2rem;
+}
+.block__product {
+}
+.product {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   justify-content: space-between;
+   border: 1px solid #f5f5f5;
+   padding: 10px 15px;
+}
+.hi {
+   background-color: #ffff00;
+}
+.selected {
+   border: 1px solid green;
+}
+.product__img {
+   max-width: 60px;
+}
+.product__body {
+}
+.product__title {
+   flex: 1 1 auto;
+   transition: color 0.3s ease 0s;
+}
+.product__title:hover {
+   color: #ffff00;
+}
+.product__price {
+   font-size: 24px;
+   color: red;
+}
+
+.quantity-container {
+}
+.quantity-container__button {
+   width: 40px;
+   height: 40px;
+   color: #252525;
+   background-color: #f5f5f5;
+   border: 1px solid gray;
+}
+.quantity-container__input {
+   text-align: center;
+   color: #252525;
+   height: 40px;
+   max-width: 80px;
+}
+
+.product__price-container {
+   display: flex;
+   gap: 0.75rem;
+   align-items: center;
+}
+/* ======================================================================================================================================================== */
+.block__columns {
+   display: grid;
+   row-gap: 30px;
+}
+
+.block__columns div {
+   display: flex;
+   gap: 60px;
+   justify-content: center;
+}
+
+.list {
+   display: grid;
+   align-content: start;
+   row-gap: 10px;
+   border: 2px solid #fff;
+   padding: 20px 40px;
+}
+
+.list__item {
+   cursor: pointer;
+   padding: 5px 10px;
+   border: 1px solid grey;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   transition: background 0.3s ease 0s;
+}
+
+.list__item:hover {
+   background-color: grey;
+}
+
+.label-search:not(:last-child) {
+   display: inline-flex;
+   align-items: center;
+   gap: 1.25rem;
+   margin-bottom: 1.875rem;
+}
+
+.label-search input {
+   color: #252525;
+}
+
+.workers-list {
+   padding-top: 1.25rem;
+   display: grid;
+   row-gap: 0.625rem;
+}
+
+.td {
+   width: 24px;
+   height: 24px;
+   background-color: gray;
+   border: 1px solid #f5f5f5;
+   cursor: pointer;
+}
+
+.td_green {
+   background-color: green;
+}
+
+.td_red {
+   background-color: red;
+}
+.block__form {
+   display: grid;
+   row-gap: 1.25rem;
+}
+
+.block__input,
+.input {
+   padding: 5px 10px;
+   color: #252525;
+}
+.block__lists {
+   display: grid;
+   row-gap: 1.875rem;
+}
+/* ======================================================================================================================================================== */
+.table {
+   border: 2px solid #f5f5f5;
+}
+.table__td {
+   cursor: pointer;
+   padding: 5px;
+   border: 1px solid #f5f5f5;
+}
+.block__table-container {
+   display: grid;
+   gap: 0.625rem;
+}
+.block__tabels {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.875rem;
+}
+
+/* ======================================================================================================================================================== */
+
+.search-label {
+   display: inline-flex;
+   align-items: center;
+   gap: 1.25rem;
+}
+
+.search-label:not(:last-child) {
+   margin-bottom: 1.25rem;
+}
+
+.search-list {
+   display: grid;
+   row-gap: 1rem;
+}
+
+.product__delete {
+   height: 30px;
+   width: 30px;
+   position: relative;
+   border: 1px solid red;
+   transition: background 0.3s ease 0s;
+}
+
+.product__delete::before,
+.product__delete::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   height: 1px;
+   width: 15px;
+   background-color: red;
+   transition: background 0.3s ease 0s;
+}
+
+.product__delete::before {
+   transform: translate(-50%, -50%) rotate(45deg);
+}
+.product__delete::after {
+   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.product__delete:hover {
+   background-color: red;
+}
+
+.product__delete:hover.product__delete::before,
+.product__delete:hover.product__delete::after {
+   background-color: #f5f5f5;
+}
+/* ======================================================================================================================================================== */
+.translator {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 1.875rem;
+}
+.translator__card {
+   border: 2px solid #f5f5f5;
+   padding: 1.875rem;
+   display: grid;
+   gap: 1.25rem;
+}
+.translator__item {
+   cursor: pointer;
+   position: relative;
+   border: 1px solid #f5f5f5;
+   padding: 0.625rem 1.25rem;
+   transition: all 0.3s ease 0s;
+}
+.translator__item:hover {
+   color: #252525;
+   background-color: #f5f5f5;
+}
+.translator__input {
+   visibility: hidden;
+   width: 0;
+   height: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.clients-container:not(:last-child) {
+   margin-bottom: 1.875rem;
+}
+.client-list {
+   display: grid;
+   row-gap: 1.25rem;
+}
+.client-title {
+   font-size: 1.25rem;
+}
+.client-title:not(:last-child) {
+   margin-bottom: 1rem;
+}
+.clients-total-amount:not(:last-child) {
+   margin-bottom: 1.25rem;
+}
+.error {
+   outline: 2px solid red;
+}
+.label-student {
+   position: relative;
+}
+
+.student-form {
+   display: grid;
+   row-gap: 30px;
+}
+.student-form:not(:last-child) {
+   margin-bottom: 1.875rem;
+}
+.error-message {
+   color: red;
+}
+.error-message:not(:last-child) {
+   margin-bottom: 0.625rem;
+}
+.block__field {
+   position: relative;
+   height: 100vh;
+}
+.block__obj-image {
+   position: absolute;
+   max-width: 3.75rem;
+   transition: all 0.4s ease 0s;
+}
